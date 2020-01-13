@@ -1,0 +1,323 @@
+/* .abstand {
+  margin-bottom: 3em;
+} */
+
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 600px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+}
+
+.responsive{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+
+iframe {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+
+
+
+body {
+  margin: 2;
+  line-height: 1.45;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  top: 0;
+  z-index: 9;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  border-top: 1.2em solid white;
+  border-bottom: 0.3em solid black;
+}
+
+ul.topnav li a {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration:inherit;
+}
+
+@media screen and (min-width: 640px) {
+  ul.topnav li a {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+ul.topnav li a:hover:not(.active) {background-color: grey;
+}
+
+/* ul.topnav li a.active {background-color: black;} */
+
+ul.topnav li.right {float: right;}
+
+
+a:link, a:visited {
+  /* background-color: #f44336; */
+  /* background-color: black; */
+  color: red;
+  padding: 5px 1px;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/*
+a:hover {
+  background-color: blue; */
+}
+
+a:active {
+  background-color: blue;
+}
+
+a {font-size: 1.2rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.kw {
+  font-size: 16px;
+  font-family: 'Roboto' sans-serif;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 3em;
+}
+
+/* h2 {
+font-family: 'Roboto' sans-serif;
+} */
+
+.headline{
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  margin-top: 3em;
+  position: relative;
+}
+
+.sprungmarke {
+  position: absolute;
+  top: -7rem;
+}
+
+.leadtext {
+  font-size: 1.5em;
+  font-family: 'Work+Sans', sans-serif;
+  font-weight: 600;
+}
+
+.fliesstext {
+  font-size: 1.4em;
+  font-family: 'Cardo', serif;
+  color: #474545;
+}
+
+.bildlegende {
+  font-size: 1.1em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-top: 0.5em;
+  margin-bottom: 3em;
+  color: #4f4f4f;
+}
+
+.spalte {
+  max-width: 50rem;
+  /* background-color: yellow; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem
+}
+
+.spalte img{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.spalte iframe{
+  width: 100%;
+}
+
+
+/* .href {
+  font-color:
+  font-family: Oswald;
+}
+
+html {
+  font-size: 14px;
+} */
+
+@media only screen and (min-width: 600px) { /* oder rem/em */
+  html {
+    font-size: 16px;
+  }
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
