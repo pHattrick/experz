@@ -2,6 +2,9 @@
   margin-bottom: 3em;
 } */
 
+body {
+ hyphens: auto;
+}
 
 .row {
   display: flex;
@@ -115,7 +118,7 @@ ul.topnav li.right {float: right;}
 a:link, a:visited {
   /* background-color: #f44336; */
   /* background-color: black; */
-  color: red;
+  color: grey;
   padding: 5px 1px;
 
   text-align: center;
@@ -137,6 +140,16 @@ a {font-size: 1.2rem;
   font-weight: 600;
   font-style: normal;
 }
+
+a.drei {
+  font-family: 'Cardo', serif;
+  font-size: 22.4px;
+  color: #474545;
+}
+
+a:hover   { color: grey;
+}
+
 
 .kw {
   font-size: 16px;
@@ -180,7 +193,7 @@ font-family: 'Roboto' sans-serif;
 }
 
 .bildlegende {
-  font-size: 1.1em;
+  font-size: 1em;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   margin-top: 0.5em;
